@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #26C2B9;
+}
+
+/* Updated Utility for v4 */
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@layer base {
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+}
+
+/* Global Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Use flex to ensure the footer stays at the bottom if content is short */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Allow vertical scrolling but prevent horizontal 'wobble' */
+  overflow-x: hidden;
+  background-color: #F8FAFC;
+  /* Fix for visible text in inputs */
+  color: #0f172a; 
+  font-family: sans-serif; /* Or your preferred font */
+  @apply antialiased bg-[#FDFDFD] text-slate-900;
+}
+
+#root {
+  flex: 1; /* This pushes the footer down */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Force standard visibility for form elements */
+input, select, textarea {
+  color: #0f172a !important; /* Force dark text so it's not white-on-white */
+}

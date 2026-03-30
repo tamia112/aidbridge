@@ -1,0 +1,301 @@
+/* Refined Footer - Compact & Modern */
+.footer-refined {
+    background-color: #0B1120;
+    color: #94a3b8;
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid rgba(38, 194, 185, 0.2);
+  }
+  
+  .footer-container-modern {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1.8rem 1.5rem 1.8rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1.6fr 1.2fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  /* Brand Section */
+  .brand-compact .logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    background: linear-gradient(120deg, #FFFFFF, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .tagline-sm {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: #94a3b8;
+    max-width: 260px;
+    margin-bottom: 0.9rem;
+  }
+  
+  .badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .badge-mini {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(38, 194, 185, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #26c2b9;
+    backdrop-filter: blur(2px);
+    border: 0.5px solid rgba(38, 194, 185, 0.25);
+  }
+  
+  /* Navigation Links */
+  .link-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+  }
+  
+  .link-col h4 {
+    color: #e2e8f0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .link-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link-col li {
+    margin-bottom: 0.55rem;
+  }
+  
+  .link-col a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .link-col a:hover {
+    color: #26c2b9;
+    transform: translateX(2px);
+    display: inline-block;
+  }
+  
+  /* Support Section */
+  .support-compact h4 {
+    color: #e2e8f0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-ticket-modern {
+    background: #26c2b9;
+    border: none;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #0a0f1c;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+  }
+  
+  .btn-ticket-modern:hover {
+    background: #1fa89f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(38, 194, 185, 0.25);
+  }
+  
+  .btn-email-modern {
+    background: transparent;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #cbd5e6;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .btn-email-modern:hover {
+    border-color: #26c2b9;
+    background: rgba(38, 194, 185, 0.05);
+    color: #26c2b9;
+  }
+  
+  .contact-micro {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
+  
+  .contact-row svg {
+    flex-shrink: 0;
+  }
+  
+  .icon-teal {
+    color: #26c2b9;
+  }
+  
+  .social-micro {
+    margin-top: 1rem;
+  }
+  
+  .social-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(38, 194, 185, 0.1);
+    border-radius: 30px;
+    padding: 0.4rem 1rem;
+    gap: 8px;
+    cursor: default;
+  }
+  
+  .social-icon-wrapper span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #cbd5e1;
+  }
+  
+  .social-icon-wrapper svg {
+    color: #26c2b9;
+  }
+  
+  /* Bottom Bar */
+  .footer-bottom-compact {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1.8rem 1.2rem 1.8rem;
+    border-top: 1px solid rgba(30, 41, 59, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #64748b;
+  }
+  
+  .legal-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .legal-links a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .legal-links a:hover {
+    color: #26c2b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 780px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+    }
+    
+    .link-section {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .brand-compact .tagline-sm {
+      max-width: 100%;
+    }
+    
+    .btn-stack {
+      flex-direction: row;
+      gap: 0.8rem;
+    }
+    
+    .btn-ticket-modern,
+    .btn-email-modern {
+      width: auto;
+      flex: 1;
+    }
+    
+    .footer-bottom-compact {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .legal-links {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container-modern {
+      padding: 1.5rem 1.2rem 1rem 1.2rem;
+    }
+    
+    .btn-stack {
+      flex-direction: column;
+    }
+    
+    .btn-ticket-modern,
+    .btn-email-modern {
+      width: 100%;
+    }
+  }

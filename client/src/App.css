@@ -1,0 +1,43 @@
+/* Reset the foundation for the whole app */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* Allow natural scrolling on Home/About pages */
+  overflow-x: hidden;
+  overflow-y: auto; 
+  background-color: #0B0F13; /* Your Obsidian background */
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Changed from center to fix layout breaks */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure images and media don't break layout */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Custom Scrollbar for a premium look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #26C2B9; /* Teal scrollbar */
+  border-radius: 10px;
+}
