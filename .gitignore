@@ -1,8 +1,18 @@
 .history/
-node_modules/
-server/node_modules/
-client/node_modules/
 .env
 dist/
 build/
 *.log
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+ai_service/venv/
+
+# Environment variables & secrets
+.env
+server/.env
+client/.env
+
+# Build outputs
+client/dist/

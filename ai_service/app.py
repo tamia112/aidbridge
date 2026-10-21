@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 OLLAMA_URL  = "http://localhost:11434/api/generate"
-MODEL_NAME  = "llama3"
+MODEL_NAME  = "tinyllama"
 
 def analyze_with_llama(text):
     prompt = f"""
