@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import NotificationItem from '../../components/NotificationItem';
 import ProfileTab from '../../components/ProfileTab';
-import { API } from '../config';
+import { API } from '../../config';
 
 
 /* ─── Campaign status config ─────────────────────────────────────── */

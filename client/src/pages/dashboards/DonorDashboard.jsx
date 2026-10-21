@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProfileTab from '../../components/ProfileTab';
 import NotificationItem from '../../components/NotificationItem';
 import CampaignCard from '../../components/CampaignCard';
-import { API } from '../config';
+import { API } from '../../config';
 
 
 import './DonorDashboard.css';

@@ -20,7 +20,7 @@ import autoTable from 'jspdf-autotable';
 import './AdminDashboard.css';
 
 //const API = 'http://localhost:5000';
-import { API } from '../config';
+import { API } from '../../config';
 const CHART_COLORS = ['#26C2B9', '#0ea5e9', '#6366f1', '#f59e0b', '#ef4444'];
 
 const STATUS = {
