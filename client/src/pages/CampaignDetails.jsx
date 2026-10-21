@@ -8,7 +8,7 @@ import {
   Plus, Minus, Edit2
 } from 'lucide-react';
 import './CampaignDetails.css';
-
+import { API } from '../config';
 const CampaignDetails = () => {
   const { id } = useParams();
   const [campaign, setCampaign] = useState(null);
@@ -18,7 +18,8 @@ const CampaignDetails = () => {
   const [customAmount, setCustomAmount] = useState('');
   const [showCustomInput, setShowCustomInput] = useState(false);
   const [showStoryModal, setShowStoryModal] = useState(false);
-  const BACKEND_URL = 'http://localhost:5000';
+  //const BACKEND_URL = 'http://localhost:5000';
+  const BACKEND_URL = API;
 
   // Function to fetch latest campaign data
   const fetchCampaignData = async () => {
