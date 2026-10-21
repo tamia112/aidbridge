@@ -5,7 +5,7 @@ import { Search, AlertCircle, Sparkles, ChevronLeft, ChevronRight } from 'lucide
 import { motion, AnimatePresence } from 'framer-motion';
 import CampaignCard from '../components/CampaignCard';
 import SkeletonCard from '../components/SkeletonCard';
-
+import { API } from '../config';
 const Discover = () => {
   const { search } = useLocation();
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Discover = () => {
       setLoading(true);
       const catParam = activeCategory !== 'All' ? `&category=${activeCategory}` : '';
       const searchParam = searchTerm ? `&search=${searchTerm}` : '';
-      const response = await fetch(`http://localhost:5000/api/campaigns?page=${currentPage}&limit=8${catParam}${searchParam}`);
+      const response = await fetch(`${API}/api/campaigns?page=${currentPage}&limit=8${catParam}${searchParam}`);
       const data = await response.json();
       if (data?.campaigns) {
         setCampaigns(data.campaigns);

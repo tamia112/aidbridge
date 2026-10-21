@@ -6,7 +6,7 @@ import {
   AlertCircle, ChevronRight, LayoutGrid 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { API } from '../config';
 import CampaignCard from '../components/CampaignCard';
 import SkeletonCard from '../components/SkeletonCard';
 
@@ -30,7 +30,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchCampaigns = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/campaigns?limit=3');
+        const response = await fetch(`${API}/api/campaigns?limit=3`);
         if (!response.ok) throw new Error('AidbridgE Cloud is temporarily unreachable.');
         const data = await response.json();
 

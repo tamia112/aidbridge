@@ -10,6 +10,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProfileTab from '../../components/ProfileTab';
 import NotificationItem from '../../components/NotificationItem';
 import CampaignCard from '../../components/CampaignCard';
+import { API } from '../config';
+
 
 import './DonorDashboard.css';
 
@@ -22,7 +24,7 @@ const DonorDashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const API_BASE = "http://localhost:5000";
+  //const API_BASE = "http://localhost:5000";
   
 const getImageUrl = (path) => {
   if (!path) return '/images/adoption.jpg';
@@ -38,7 +40,7 @@ const getImageUrl = (path) => {
     cleanPath = `uploads/${cleanPath}`;
   }
 
-  return `${API_BASE}/${cleanPath}`;
+  return `${API}/${cleanPath}`;
 };
 
   

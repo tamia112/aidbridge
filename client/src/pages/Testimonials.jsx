@@ -10,7 +10,7 @@ import {
   PlusCircle
 } from 'lucide-react';
 
-const API  = 'http://localhost:5000';
+import { API } from '../config';
 const TEAL = '#26C2B9';
 
 /* ── Avatar ──────────────────────────────────────────────────────── */

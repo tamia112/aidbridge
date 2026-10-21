@@ -11,6 +11,7 @@ import {
   Apple, GraduationCap
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { API } from '../config';
 
 const CATEGORIES = [
   { label: 'Medical',   icon: <Heart size={22}/>,         desc: 'Hospital bills, treatment, surgery' },
@@ -71,7 +72,7 @@ const StartCampaign = () => {
       const token = localStorage.getItem('token');
       if (!token) { clearInterval(msgTimer); navigate('/login'); return; }
 
-      const response = await fetch('http://localhost:5000/api/campaigns/launch', {
+      const response = await fetch(`${API}/api/campaigns/launch`, {
         method:  'POST',
         headers: { Authorization: `Bearer ${token}` },
         body:    data,

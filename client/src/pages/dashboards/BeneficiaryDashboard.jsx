@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 import NotificationItem from '../../components/NotificationItem';
 import ProfileTab from '../../components/ProfileTab';
+import { API } from '../config';
+
 
 /* ─── Campaign status config ─────────────────────────────────────── */
 const STATUS_CFG = {
@@ -40,7 +42,8 @@ const BeneficiaryDashboard = () => {
   const [sidebarOpen, setSidebarOpen]   = useState(false);
   const overlayRef = useRef(null);
   const navigate = useNavigate();
-  const API_BASE = 'http://localhost:5000';
+  //const API_BASE = 'http://localhost:5000';
+
 
   /* close sidebar on ESC */
   useEffect(() => {
@@ -76,7 +79,7 @@ const BeneficiaryDashboard = () => {
   const handleMarkAsRead = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`${API_BASE}/api/notifications/${id}/read`, {
+      const res = await fetch(`${API}/api/notifications/${id}/read`, {
         method: 'PATCH', headers: { Authorization: `Bearer ${token}` }
       });
       if (res.ok) setNotifications(prev => prev.map(n => n._id === id ? { ...n, isRead: true } : n));
