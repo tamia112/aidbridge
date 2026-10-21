@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ShieldCheck, MapPin, ArrowRight, Heart } from 'lucide-react';
-
+import { API } from '../config';
 const VerifiedBadge = ({ score }) => (
   <div className="flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-teal-100">
     <ShieldCheck size={14} className="text-[#26C2B9]" />
@@ -45,7 +45,8 @@ const ProgressCard = ({ raised, target }) => {
 
 const CampaignCard = ({ campaign }) => {
   const navigate = useNavigate();
-  const BACKEND_URL = 'http://localhost:5000';
+  //const BACKEND_URL = 'http://localhost:5000';
+  const BACKEND_URL = API;
 
   // --- Styles Object for "Spacious Center" ---
   const s = {
