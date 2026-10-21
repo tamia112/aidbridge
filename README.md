@@ -60,3 +60,5 @@ Ensure you have the following installed on your system:
 - **Python 3.10+` & `pip`
 - **MongoDB** (Local instance or MongoDB Atlas URI)
 
+##vercel deployment
+[![Vercel Deployment](https://therealsujitk-vercel-badge.vercel.app/?app=aidbridge)](https://aidbridge.vercel.app)
