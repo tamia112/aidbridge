@@ -25,6 +25,11 @@ import BeneficiaryDashboard from './pages/dashboards/BeneficiaryDashboard';
 import AdminDashboard from './pages/dashboards/AdminDashboard';
 import DonorDashboard from './pages/dashboards/DonorDashboard';
 
+// --- LIVE RENDER BACKEND API CONFIGURATION ---
+export const API = process.env.NODE_ENV === 'production' 
+  ? 'https://aidbridge-itsz.onrender.com/api' 
+  : 'http://localhost:5000/api';
+
 
 const ProtectedRoute = ({ children, allowedRole }) => {
   const token = localStorage.getItem('token');
