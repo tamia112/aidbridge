@@ -1,8 +1,8 @@
 # 🌍 AidbridgE
 
 AidbridgE is a full-stack humanitarian aid and donation management platform engineered to bring transparency, accountability, and AI-driven fraud detection to charitable giving. Designed specifically to tackle inefficiencies and verification bottlenecks in community relief efforts, the platform connects donors directly with verified beneficiaries while equipping administrators with automated forensic tools.
-[![Vercel Deployment](https://therealsujitk-vercel-badge.vercel.app/?app=aidbridge)](https://aidbridge.vercel.app)
 ---
+[![Vercel Deployment](https://therealsujitk-vercel-badge.vercel.app/?app=aidbridge)](https://aidbridge.vercel.app)
 
 ## 🌟 Comprehensive Project Overview
 
